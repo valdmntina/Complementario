@@ -38,7 +38,7 @@
     </section>
     <section>
         <h1>Deje su comentario</h1>
-        <form action="controlador" method="post">
+        <form action="controlador" method="post" enctype="multipart/form-data">
             <div>
                 <input type="text" maxlength="40" minlength="10" placeholder="Su nombre" value="Valentina Duque" readonly="" required>
             </div>
@@ -47,6 +47,18 @@
             </div>
             <div>
                 <input type="text" pattern="[]">
+            </div>
+            <div>
+                <input type="date">
+            </div>
+            <div>
+                <input type="time">
+            </div>
+            <div>
+                <input type="color">
+            </div>
+            <div>
+                <input type="file" accept=".pdf" multiple>
             </div>
             <div>
                 <textarea name="contenido" id="contenido" rows="20" cols="50" placeholder="Su comentario" required va>cosito</textarea>
