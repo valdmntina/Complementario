@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>
+               Nombre
+            </th>
+            <th>
+                Apellido
+            </th>
+            <th>
+                Correo
+            </th>
+            <th>
+                Telefono
+            </th>
+            <th>
+                Accion
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Valentina</td>
+                <td>Duque</td>
+                <td>duquesakura@gmail.com</td>
+                <td>3123333917</td>
+                <td>
+                    <button>Modificar</button>
+                    <form action="elimina" method="get">
+                        <input type="hidden" value="1" name="id">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>Lopez</td>
+                <td>lopecito@gmail.com</td>
+                <td>3145879658</td>
+                <td>
+                    <button>Modificar</button>
+                    <form action="elimina" method="get">
+                        <input type="hidden" value="2" name="id">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Alejandra</td>
+                <td>Castellanos</td>
+                <td>rojito@gmail.com</td>
+                <td>3254788965</td>
+                <td>
+                    <button>Modificar</button>
+
+                    <form action="elimina" method="get">
+                        <input type="hidden" value="3" name="id">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">
+                <p style="text-align: center;">Este es el pie de pagina de la tabla</p>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
