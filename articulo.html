@@ -38,16 +38,16 @@
     </section>
     <section>
         <h1>Deje su comentario</h1>
-        <form action="controlador" method="post" enctype="multipart/form-data">
+        <form action="controlador" method="get" enctype="multipart/form-data" name="form" autocomplete="on">
             <div>
                 <input type="text" maxlength="40" minlength="10" placeholder="Su nombre" value="Valentina Duque" readonly="" required>
             </div>
             <div>
                 <input type="number" maxlength="40" minlength="10" step="0.5" required title="sa monda que?">
             </div>
-            <div>
-                <input type="text" pattern="[a-zA-Z],{2,10}" required>
-            </div>
+            <!-- <div>
+                <input type="text" pattern="[a-zA-Z],{2,10}" required autofocus>
+            </div> -->
             <div>
                 <input type="date">
             </div>
@@ -61,15 +61,44 @@
                 <input type="file" accept=".pdf" multiple>
             </div>
             <div>
+                <input type="radio" name="genero">
+                <input type="radio" name="genero">
+                <input type="radio" name="genero">
+            </div>
+            <div>
+                <input type="checkbox" name="gusto">
+                <input type="checkbox" name="gusto">
+                <input type="checkbox" name="gusto">
+                <input type="checkbox" name="gusto">
+            </div>
+            <div>
+                <select name="ciudad" id="ciudad"> 
+                    <option value="1">Bucaramanga</option>
+                    <option value="2">Bogotá</option>
+                    <option value="3">Medellin</option>
+                    <option value="4">Floridablanca</option>
+                </select>
+            </div>
+            <div>
                 <textarea name="contenido" id="contenido" rows="20" cols="50" placeholder="Su comentario" required va>cosito</textarea>
             </div>   
             <div>
                 <button type="submit">Enviar</button>
             </div>
-                
-            
-            
         </form>
+
+        <div>
+            <input type="text" placeholder="por fuera" form="formulario">
+        </div>
+        <div>
+            <input type="search" form="formulario">
+        </div>
+        <div>
+            <input type="password" form="formulario">
+        </div>
+        <div>
+            <input type="text" name="user" form="formulario" autocomplete="off">
+        </div>
     </section>
 </main>
 
