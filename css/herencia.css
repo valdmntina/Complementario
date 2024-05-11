@@ -1,0 +1,23 @@
+p#negro.color{
+    color: black;
+}
+
+p{
+    color: brown;
+}
+
+.color{
+    color: blueviolet;
+}
+
+div p{
+    color: aqua;
+}
+
+p.color{
+    color: chartreuse;
+}
+
+p#bandera{
+    color: coral;
+}
