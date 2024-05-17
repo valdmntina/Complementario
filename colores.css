@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Jaro";
+    font-size: 16px;
+}
+
+.header{
+    padding: 45px 0;
+    color: #ffff;
+    background: rgba(78, 14, 138, 0.575);
+    background: #1b95aad5;
+    background: hsl(180, 40%, 50%);
+    background: #582660;
+    background-image: linear-gradient( rgb(235, 75, 107) 30%, rgb(108, 148, 211) 80% );
+}
+
+.title{
+    text-align: center;
+    font-size: 1rem;
+    /* font-size: 40px; */
+}
