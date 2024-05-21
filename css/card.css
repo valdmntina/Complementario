@@ -35,7 +35,7 @@ body{
 }
 
 .card:hover{
-    background-color: #f3c1e2;;
+    background-color: #f3c1e2;
 }
 
 .card:hover img{
@@ -85,4 +85,24 @@ body{
     color: #ffff;
     margin: 20px;
     text-decoration: none;
+}
+
+.copy{
+    color: grey;
+}
+
+.copy2{
+    color: #fff;
+}
+
+.button:hover{
+    background-color:  #ffb8d7;
+}
+
+.button_3{
+    background-color: #fca5cb;
+}
+
+.button_2:hover{
+    background-color: #ffa7e2;
 }
