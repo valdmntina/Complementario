@@ -43,8 +43,12 @@ body{
     transition: transform 0.3s;
 }
 
-.card:hover .title{
+.card:hover .title {
     color: #e46ebc;
+}
+
+.card:nth-of-type(2n + 1){
+    background: #fd8fd8;
 }
 
 .img{
@@ -62,6 +66,12 @@ body{
 
 .title{
     color: #ea94cd;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.title2{
+    color: #ff62cb;
     text-align: center;
     margin: 20px 0 10px;
 }
