@@ -106,3 +106,9 @@ body{
 .button_2:hover{
     background-color: #ffa7e2;
 }
+
+/* @media(min-width:900px){
+    .card{
+        background-color: #ffb8d7;
+    }
+} */
