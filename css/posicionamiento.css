@@ -9,16 +9,30 @@ body{
     height: 300vh;
 }
 
+header{
+    background-color: blueviolet;
+    height: 80px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header a{
+    color: #fff;
+    padding: 20px;
+}
+
 .container{
     width: 450px;
     height: 530px;
     margin: 20px auto;
     border: 5px solid steelblue;
-    position: relative;
+    position: sticky;
 }
 
 .box{
-    background: crimson;
+    background: steelblue;
     width: 100px;
     height: 100px;
     margin-top: 20px;
@@ -28,27 +42,32 @@ body{
     line-height: 100px;
     font-weight: bold;
 }
-
-.static{
+/* 
+ .static{
     position: static;
-}
+} */
 
-.relative{
+/* .relative{
     background: rgb(20, 220, 110);
     position: relative;
     bottom: 10px;
     top: 10px;
-    /* /* left: ;
-    right: ; */
-} 
+    left: 100px;
+    bottom: 120px;
 
-.absolute{
+ }  */
+
+/* .absolute{
     background: purple;
     position: absolute;
-    border-radius: 50px;
+    top: 0;
     margin: 0;
-    /* left: 80px;
-    top: 120px; */
+    left: 0;
+} */
+
+.fixed{
+    background-color: #000;
+    position: fixed;
     right: 0;
     bottom: 0;
 }
