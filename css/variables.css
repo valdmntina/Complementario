@@ -53,6 +53,7 @@ body{
 }
 
 .card2{
+    --color2: purple;
     background: #fff;
     width: 300px;
     margin: 30px auto;
