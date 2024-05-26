@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Jaro';
+}
+
+.nav{
+    background: purple;
+    height: 70px;
+    padding: 0 50px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.enlace{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 70px;
+    transition: 0.3s;
+}
+
+.enlace:hover{
+    background: #fff;
+    color: purple;
+}
+
+.section{
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.title{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.section:nth-of-type(1){
+    margin-top: 70px;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+.section:nth-of-type(2){
+    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+}
+
+.section:nth-of-type(3){
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
