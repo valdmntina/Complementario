@@ -51,7 +51,7 @@ body{
     background: #fd8fd8;
 }
 
-.img{
+.card__img{
     width: 98%;
     height: 180px;
     /* object-fit: cover; */
@@ -112,3 +112,17 @@ body{
         background-color: #ffb8d7;
     }
 } */
+
+/* @media screen and (min_width:288px) {
+    body{
+        padding: 5px 5px;
+    }
+
+    .card{
+
+    }
+} */
+
+.card--img:hover{
+    background-color: #efb7dd;
+}

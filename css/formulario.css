@@ -71,7 +71,7 @@ body{
 
 .form__submit:hover{
     background-image: var(--gradientA);
-    color: #000;
+    color: #91a329;
 }
 
 @media screen and (max_width:780px) {
@@ -100,4 +100,25 @@ body{
     .form__submit{
         font-size: 14px;
     }
+}
+
+.input--nombre{
+    border-color: #5e5e18;
+    background-color: #e0e0ac;
+}
+
+.input--email{
+    border-color: #404009;
+    background-color: #ffffd6;
+}
+
+.input--message{
+    border-color: #6c6c53;
+    background-color: #e6e696;
+}
+
+.submit--button{
+    background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+    transform: matrix(5);
+    color: rgb(224, 92, 92);
 }

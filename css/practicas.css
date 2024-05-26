@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Mukta:wght@200;300;400;500;600;700;800&family=Slabo+27px&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Slabo 27px", serif;
+    min-height: 200vh;
+    background: tomato;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(-20deg, #e9defaa0 0%, #fbfcdbbc 100%), url(../img/ejemplo2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: .1px;
+    position: relative;
+}
+
+.container-text{
+    text-align: center;
+    margin-top: 350px;
+    color: tomato;
+}
+
+.hero__title{
+    font-size: 4rem;
+}
+
+.hero__copy{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.hero__cta{
+    display: inline-block;
+    background-color: #fff;
+    text-decoration: none;
+    color: tomato;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 250px;
+}
+
+.hero__wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
