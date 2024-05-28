@@ -33,7 +33,7 @@
     border: medium solid #999;
     background-color: #666;
     width: 300px;
-    height: 200px;
+    /* height: 200px; */
     /* flex-grow: 1; */
     /* flex-shrink: 1; */
     
@@ -45,6 +45,7 @@
     /* flex-shrink: 1; */
     flex-basis: auto;
     order: 3;
+    align-self: stretch;
 }
 
 .item:nth-of-type(2){

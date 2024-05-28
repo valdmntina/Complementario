@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(135deg, #82d9a4b2 0%, #78a5a79f 100%), url(../img/ejemplo3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+}
+
