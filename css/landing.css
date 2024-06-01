@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --salem : #08663f;
+    --pariswhite: #cbe0d7;
+    --acapulco: #7caf9c;
+    --mar: #4c6159;
+    --white: #fff;
+    --nowhite: #eeeeee;
+    --nav-height: 70px;
+    --grey: #e4e3e3;
+    --box-shadow: 0 0 4px -1px rgba(0, 0, 0, 0.5);
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background: var(--white);
+}
+
+section{
+    height: 100vh;
+}
+
+nav{
+    height: var(--nav-height);
+    background: var(--salem);
+}
+
+.contenedor{
+    width: 90%;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    align-items: center;
+    justify-content: space-between;
+    height: var(--nav-height);
+    background: var(--salem);
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: var(--box-shadow);
+}
+
+.logo{
+    margin-left: 20px;
+    color: var(--pariswhite);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav{
+    display: flex;
+}
+
+.enlace{
+    color: var(--pariswhite);
+    display: inline-block;
+    line-height: var(--nav-height);
+    padding: 0 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.enlace:hover{
+    height: 100%;
+    color: var(--acapulco);
+    background: var(--nowhite);
+}
+
+.principal{
+    height: calc(100vh - var(--nav-height));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-texto{
+    flex-basis: 45%
+}
+
+.titulo{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h1.titulo span{
+    color: var(--salem);
+}
+
+.copy{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.cta{
+    display: inline-block;
+    background: var(--salem);
+    color: var(--white);
+    padding: 16px 30px;
+    border-radius: 30px;
+}
+
+.ilustracion{
+    flex-basis: 50%;
+}
+
+.img{
+    max-width: 750px;
+}
+
+.nosotros-descripcion{
+    order: 1;
+    align-self: center;
+}
+
+.nosotros-imagen{
+    order: 0;
+}
+
+.nosotros-imagen img{
+    max-width: 750px;
+}
+
+.bg{
+    background: var(--grey);
+}
+
+.parrafo{
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #1b1919;
+}
+
+.parrafo:last-of-type{
+    margin-bottom: 30px;
+}
+
+.contact{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contactenos{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--salem);
+}
+
+.contactenos-input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
