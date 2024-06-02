@@ -18,6 +18,7 @@
     --nav-height: 70px;
     --grey: #e4e3e3;
     --box-shadow: 0 0 4px -1px rgba(0, 0, 0, 0.5);
+    --border: solid 1p #f2f2f2;
 }
 
 body{
@@ -148,7 +149,7 @@ h1.titulo span{
     margin-bottom: 30px;
 }
 
-.contact{
+/* .contact{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -164,9 +165,52 @@ h1.titulo span{
     color: var(--salem);
 }
 
+.contactenos-parrafo{
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
 .contactenos-input{
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
+} */
+
+.subtitulo{
+    color: var(--salem);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto{
+    display: flex;
+    gap: 6px;
+    width: 750px;
+    padding: 10px;
+    
+
+}
+
+.formulario-contacto div{
+    flex: 1;
+}
+
+.cajas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: var(--border);
+    outline: none;
 }
