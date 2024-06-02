@@ -178,6 +178,12 @@ h1.titulo span{
     border: 1px solid #ccc;
 } */
 
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .subtitulo{
     color: var(--salem);
     font-size: 3rem;
@@ -194,8 +200,6 @@ h1.titulo span{
     gap: 6px;
     width: 750px;
     padding: 10px;
-    
-
 }
 
 .formulario-contacto div{
@@ -213,4 +217,19 @@ input{
     padding: 10px;
     border: var(--border);
     outline: none;
+}
+
+.contacto-mensaje{
+    resize: none;
+    min-width: 350px;
+    min-height: 191px;
+}
+
+.cta-contacto{
+    display: inline-flex;
+    background: var(--salem);
+    color: var(--white);
+    margin: 8px;
+    padding: 0px 30px;
+    border-radius: 30px;
 }
