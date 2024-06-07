@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+</head>
+<body>
+    <script>
+        var curso = "html. css, javascript";
+        let personas = "estudiando";
+        {
+            curso = "Javascript"
+            personas = "validando el ambito de bloque"
+            // console.log("estamos en el bloque", curso)
+            // console.log("estamos en el bloque", personas)
+        }
+        console.log("fuera del bloque", curso)
+        console.log("fuera del bloque", personas)
+        console.log(window.curso)
+        console.log(window.personas)
+        console.clear()
+
+        let a; //esta monda si
+        a = "estoy estudiando"
+        console.log(a)
+        const PI = 3.1416; //las constantes no se pueden declarar vacias
+        // PI = 3.1516; //tampoco se les puede cambiar su valor
+        let jhon = "Jhon becerra";
+        let _jhon = "John becerra";
+        let $jhon = "John becerra";
+        let edad = 38;
+        edad = "no tengo edad"
+        edad = false;
+        
+        const persona = {
+            nombre: "Valentina",
+            edad: 21,
+            gustos: ["musica", "leer", "hello kitty"]
+        }
+        persona.sexo = "Femenino"
+        persona.nombre = "Alejandra"
+        console.log(persona)
+
+        const dias = ["lunes", "martes", "miercoles"]
+        dias.push("jueves", "viernes", "sabado", "domingo")
+        console.log(dias)
+
+        console.clear()
+
+        let palabra = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea aliquid culpa, ullam, sint nulla voluptatum tenetur asperiores ab fuga maiores?"
+        let otraCadena = "valentina-duque"
+        console.log(palabra.length)
+        console.log(palabra.toUpperCase()) //minuscula to lower
+        console.log(palabra.includes("dolor")) //si se encuentra dentro del string
+        console.log(palabra.split(" ")) //convierte en un arreglo 
+        console.log(otraCadena.split("-"))
+        console.clear()
+
+        let nombre = "Valentina"
+        let apellido = "Duque"
+        // console.log("el nombre es:", nombre, "y su apellido es:", apellido) sirve 
+        // console.log("el nombre es:" + nombre + "y su apellido es:" + apellido) sirve
+        // console.log(`el nombre es: ${nombre} y su apellido es: ${apellido}` ) sirve
+        
+        let ul = "<ul>" + 
+            "<li>palabra 1</li>" +
+            "<li>palabra 2</li>" +
+            "<li>palabra 3</li>" +
+            "</ul>"
+        console.log(ul)
+
+        let ol = `  <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                    </ol>`;
+        console.log(ol)
+
+        console.clear()
+
+        let $a = 2;
+        let $b = new Number(1);
+        let $c = 7.199999;
+        let $d = "5.6"; 
+
+        console.log($a + $b)
+        console.log($c.toFixed(4)) //redondea
+        console.log(parseInt($c)) 
+        console.log(typeof $d, typeof $a, typeof $b)
+        console.log(parseFloat($d))
+        console.clear()
+
+        let falso = false 
+        let verdadero = true
+    </script>
+    
+</body>
+</html>

@@ -72,32 +72,34 @@
             <p class="copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, enim!</p>
             <form action="" class="form">
                 <div class="formulario-contacto">
-                    <div>
-                        <div class="cajas">
-                            <label for="nombre">Ingrese su nombre</label>
-                            <input type="text" id="nombre">
-                        </div>
-                        <div class="cajas">
-                            <label for="correo">Ingrese su correo</label>
-                            <input type="email" id="correo">
-                        </div>
-                        <div class="cajas">
-                            <label for="telefono">Ingrese su telefono</label>
-                            <input type="text" id="telefono" max="10">
-                        </div>
-                        <div class="cajas">
-                            <label for="datos">¿Acepta el uso de sus datos?</label>
-                            <input type="checkbox">
-                        </div>
+                  <div class="bloques">
+                    <!-- Cajas de texto -->
+                    <div class="cajas">
+                      <label for="nombre">Ingrese su nombre</label>
+                      <input type="text" id="nombre">
                     </div>
-                    <div>
-                        <div>
-                            <textarea class="contacto-mensaje" placeholder="Deja tu mensaje"></textarea>
-                            <a href="#" class="cta-contacto">Enviar</a>
-                        </div>
+                    <div class="cajas">
+                      <label for="email">Ingrese su email</label>
+                      <input type="email" id="email">
                     </div>
+                    <div class="cajas">
+                      <label for="telefono">Ingrese su teléfono</label>
+                      <input type="tel" id="telefono">
+                    </div>
+                    <div class="cajas cajas-datos">
+                      <label for="datos">Acepto el tratamiento de mis datos</label>
+                      <input type="checkbox" id="datos">
+                    </div>
+                  </div>
+                  <div class="bloques">
+                    <div>
+                      <label for="mensaje">Ingrese su mensaje</label>
+                      <textarea id="mensaje"></textarea>
+                    </div>
+                  </div>
                 </div>
-            </form>
+                <button class="submit">Enviar</button>
+              </form>
         </section>
 
     </main>
