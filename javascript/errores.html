@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errores</title>
+</head>
+<body>
+    <style>
+        body{
+            background: #000;
+        }
+    </style>
+    <script>
+        // try {
+        //     console.log("codigo que se evalua")
+        // } catch (error) {
+        //     console.log("cuando ocurre un error")
+        // } finally {
+        //     console.log("bloque que siempre se ejecuta")
+        // }
+
+        // try {
+        //     let numero = 9
+        //     if(isNaN(numero)){
+        //         console.log("mensaje que le mostraremos al usuario")
+        //     }
+        //     console.log(numero * numero)
+        // } catch (error) {
+            
+        // }
+
+        //personaliza el error
+        try {
+            let numero = "numero";
+            if(typeof numero === Number){
+                console.log(numero * 8) 
+            }else {
+                throw new Error("mensaje que se le mostrara al usuario")
+            }
+        } catch (error) {
+            console.error(`Se produjo el siguiente error: ${error}`)
+        }
+    </script>
+</body>
+</html>
