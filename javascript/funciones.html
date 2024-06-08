@@ -7,37 +7,56 @@
 </head>
 <body>
     <script>
-        function nombre(){
-            console.log("JavaScript")
-        }
-        nombre()
+        // function nombre(){
+        //     console.log("JavaScript")
+        // }
+        // nombre()
 
-        function esPersona(){
-            console.log("el es marciano")
-            return "si es persona";
-        }
-        let miguelito = esPersona()
-        console.log(miguelito)
-        console.clear()
+        // function esPersona(){
+        //     console.log("el es marciano")
+        //     return "si es persona";
+        // }
+        // let miguelito = esPersona()
+        // console.log(miguelito)
+        // console.clear()
 
-        let persona = name("Jhon Becerra")
-        console.log(persona)
-        //declarada
-        function name(nombre = "Miguelito"){
-            return nombre
-        }
+        // let persona = name("Jhon Becerra")
+        // console.log(persona)
+        // //declarada
+        // function name(nombre = "Miguelito"){
+        //     return nombre
+        // }
 
-        //expresada
-        const expresada = function (nombre){
-            return nombre
-        }
-        expresada("nombre")
+        // //expresada
+        // const expresada = function (nombre){
+        //     return nombre
+        // }
+        // expresada("nombre")
 
-        const anonima = (nombre) =>{
-            console.log(nombre)
-        }
-        anonima("Jhon")
+        //funcion anonima
+        // const anonima = (nombre) =>{
+        //     console.log(nombre)
+        // }
+        // anonima("Jhon")
         
+        // console.clear()
+
+        // const anonimo = (nombre, apellido) => console.log(`${nombre} ${apellido}`)
+        // anonimo('Valentina', 'Duque')
+
+        const anonima = (a, b) => a + b
+        const uno = a => a
+        let a = 5
+        let b = 6
+        let suma = anonima(a, b)
+        let letra = uno(a)
+        console.log(suma, letra)
+
+        //con el function sirve igual que con => y sin llaves solo se le pone lo que retorna sin el return, con flecha se llama arrow
+
+        
+
+
     </script>
 </body>
 </html>

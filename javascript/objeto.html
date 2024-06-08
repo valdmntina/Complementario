@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto</title>
+</head>
+<body>
+    <script>
+        const persona = {
+            nombre: "Valentina",
+            apellido: "Duque",
+            gustos: ["musica", "animalitos", "ver series"],
+            saludar: function(){
+                console.log(`Hola mi nombre es ${this.nombre} y mi apellido ${this.apellido}`)
+            }
+        }
+        persona.saludar()
+
+        const tarea = {
+            nombre: "Valentina",
+            apellido: "Duque",
+            edad: "21 años",
+            gustos: ["dormir", "ver anime", "y los animalitos"],
+            saludo: function(){
+                console.log(`Holi :D
+                Mi nombre es ${this.nombre}
+                Mi apellido es ${this.apellido}
+                Tengo ${this.edad}
+                Y me gusta ${this.gustos}`)
+            }
+        }
+        tarea.saludo()
+
+        console.log(Object.keys(tarea)) //accedo a las llaves
+        console.log(Object.values(tarea)) //accedo al valor
+        console.log(tarea.hasOwnProperty("edad")) //si x atributo existe se usa
+
+        //new es la palabra reservada que inicializa un objeto
+        // const objeto = new Object ()
+        // objeto.nombre = "Valentina"
+        // objeto.apellido = "Duque"
+        // objeto.saludar =() => {
+        //     console.log(`Hola mi nombre es ${this.nombre}`)
+        // }
+        // console.log(objeto.saludar())
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionalels</title>
+</head>
+<body>
+    <style>
+        body{
+            background: #000;
+        }
+    </style>
+    <script>
+        //estructuras condicionales
+        /*if*/
+
+        // let edad = 38
+        // if (edad <= 17){
+        //     console.log("es menor de edad")
+        // } else {
+        //     console.log("es mayor de edad")
+        // }
+
+        /*if - else if - else*/
+
+        // let hora = 15;
+        // if (hora >= 0 && hora <= 5){
+        //     console.log("no puedo trabajar, estoy en mi descanso nocturno")
+        // } else if (hora >= 6 && hora <= 11){
+        //     console.log("Buenos dias")
+        // } else if(hora >= 12 && hora <= 18) {
+        //     console.log("Buenas tardes")
+        // } else {
+        //     console.log("Buenas noches")
+        // }
+
+        /*
+        domingo   = 0
+        lunes     = 1
+        martes    = 2
+        miercoles = 3
+        jueves    = 4
+        viernes   = 5
+        sabado    = 6
+        */
+
+        let dia = 4;
+
+        console.log(dia)
+
+        switch (dia) {
+            case 0:
+                console.log("es momingo")
+                break;
+            case 1:
+                console.log("es lunes")
+                break;
+            case 2:
+                console.log("es maltes")
+                break;
+            case 3:
+                console.log("es mielcoles")
+                break;
+            case 4:
+                console.log("es jueves")
+                break;
+            case 5:
+                console.log("es viernes")
+                break;
+            case 6:
+                console.log("es sabado")
+                break;
+            default: //so ninguna se cumple se cierra como el else
+                console.log("el dia no es valido")
+                break;
+        }
+    </script>
+</body>
+</html>
