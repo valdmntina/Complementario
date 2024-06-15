@@ -1,11 +1,11 @@
-import { getUserById } from "./modulo.js";
+import { getUserById, getAsignacionById, getAsignacionByIds } from "./modulo.js";
 
 let id = parseInt(prompt('Ingrese el id:'))
 
 getUserById(id, function(error, user){
     if (error) {
-        alert(error)
+        console.error(error)
     } else {
-        alert(`El usuario es ${user.nombre}`)
+        getAsignacionByIds(user.asignaciones)
     }
  });

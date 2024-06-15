@@ -1,21 +1,4 @@
-const users = [
-    {
-        id: 1,
-        nombre: 'Valentina Duque'
-    },
-    {
-        id: 2,
-        nombre: 'Donkanzzz'
-    },
-    {
-        id: 3,
-        nombre: 'Santiago Colmenares'
-    },
-    {
-        id: 4,
-        nombre: 'Claudia Lopez'
-    }
-];
+import { users, asignaciones } from "./datos";
 
 export function getUserById(id, callback) {
     const user = users.find(function (user) {
@@ -25,4 +8,18 @@ export function getUserById(id, callback) {
         return callback(`usuario no encontrado para el id ${id}`)
     }
     return callback(null, user)
+}
+
+export function getAsignacionByIds (ids, callback) {
+    console.log(ids)
+    const respuesta = asignaciones.filter( (x, ids) => {
+
+    });
+    // const asignacion = asignaciones.find(function (asignacion) {
+    //     return asignac.id == id;
+    // });
+    // if (!asignacion) {
+    //     return callback(`asignacion no encontrada para el id ${id}`)
+    // }
+    // return callback(null, asignacion)
 }
