@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asincronia</title>
+</head>
+<body>
+    <script>
+        // ( ()  => {
+        //     console.log('Inicio')
+
+        //     function dos(){
+        //         console.log('dos')
+        //     }
+        //     function uno (){
+        //         console.log('uno')
+        //         dos()
+        //     }
+        //     uno()
+        //     console.log('Final')
+        // })()
+
+        (() => {
+            console.log('Asincrono')
+            console.log('Inicio')
+            function dos(){
+                setTimeout(() => {
+                    console.log('dos')
+                }, 0);
+            }
+            function uno(){
+                setTimeout(() => {
+                    console.log('uno')
+                }, 0);
+                dos()
+                console.log('tres')
+            }
+            uno()
+
+            console.log('Final')
+        })()
+    </script>
+</body>
+</html>
