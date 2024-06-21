@@ -13,7 +13,7 @@ export function getUserById(id, callback) {
 export function getAsignacionByIds (ids, callback) {
     console.log(ids)
     const respuesta = asignaciones.filter( (x, ids) => {
-
+        console.log(ids)
     });
     // const asignacion = asignaciones.find(function (asignacion) {
     //     return asignac.id == id;
