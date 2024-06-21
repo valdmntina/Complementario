@@ -11,14 +11,16 @@ export function getUserById(id, callback) {
 }
 
 export function getAsignacionByIds (ids, callback) {
-    console.log(ids)
-    const respuesta = asignaciones.filter( (asignacion, indice, arreglo) => {
-        console.log(asignacion.id)
-        console.log(ids)
-    });
+    const respuesta = asignaciones.filter( (asignacion) => ids.includes(asignacion.id) ? true : false);
+    callback(null, respuesta)
+}
+
+
     
     
-    
+    // console.log(asignacion.id)
+    // console.log(ids)
+    // callback()
     
     // console.log(asignacion)
     // if (ids.includes(indice)) return true
@@ -33,4 +35,3 @@ export function getAsignacionByIds (ids, callback) {
     //     return callback(`asignacion no encontrada para el id ${id}`)
     // }
     // return callback(null, asignacion)
-}
