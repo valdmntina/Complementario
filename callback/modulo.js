@@ -1,4 +1,4 @@
-import { users, asignaciones } from "./datos";
+import { users, asignaciones } from "./datos.js";
 
 export function getUserById(id, callback) {
     const user = users.find(function (user) {
@@ -12,9 +12,20 @@ export function getUserById(id, callback) {
 
 export function getAsignacionByIds (ids, callback) {
     console.log(ids)
-    const respuesta = asignaciones.filter( (x, ids) => {
+    const respuesta = asignaciones.filter( (asignacion, indice, arreglo) => {
+        console.log(asignacion.id)
         console.log(ids)
     });
+    
+    
+    
+    
+    // console.log(asignacion)
+    // if (ids.includes(indice)) return true
+    // callback(respuesta)
+    // console.log(indice)
+    // console.log(arreglo)
+    
     // const asignacion = asignaciones.find(function (asignacion) {
     //     return asignac.id == id;
     // });

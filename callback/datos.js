@@ -1,4 +1,4 @@
-const users = [
+export const users = [
     {
         id: 1,
         nombre: 'Jhon Becerra',
@@ -26,7 +26,7 @@ const users = [
     }
 ];
 
-const asignaciones = [
+export const asignaciones = [
     {
         id: 1,
         nombre: 'logica'
