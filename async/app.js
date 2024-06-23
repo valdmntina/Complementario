@@ -30,6 +30,22 @@ console.log($section)
 usuarios()
 .then((lista) => {
     lista.map((user) => {
+        const $div = document.createElement("div");
+        const $a = document.createElement("a");
+        const $ul = document.createElement("ul");
+        const $span = document.createElement("span")
+
+        $a.setAttribute("href", "#");
+        $a.classList.add("enlace");
+        $a.textContent = user.name;
+        $ul.textContent = user.username;
+        $span.textContent = user.company;
+
+        $div.classList.add("item");
+        $div.appendChild($a);
+        $div.appendChild($ul)
+
+        $section.appendChild($div);
         post(user.id)
         .then((posts) => {
             // console.log(posts)
