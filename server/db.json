@@ -1,0 +1,41 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "jhon",
+            "asignaciones": [1, 5]
+        },
+        {
+            "id": 2,
+            "nombre": "Alejandra Castellanos",
+            "asignaciones": [1, 2, 3]
+        },
+        {
+            "id": 3,
+            "nombre": "Santiago Colmenares",
+            "asignaciones": [3]
+        }
+    ],
+    "asignaciones": [
+        {
+            "id": 1,
+            "nombre": "Requerimientos"
+        },
+        {
+            "id": 2,
+            "nombre": "SQL"
+        },
+        {
+            "id": 3,
+            "nombre": "HTML"
+        },
+        {
+            "id": 4,
+            "nombre": "CSS"
+        },
+        {
+            "id": 5,
+            "nombre": "JavaScript"
+        }
+    ]
+}
